@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body style="background-color:powderblue ">
+<script type="text/javascript">
+function OnSubmitForm()
+{
+	var a = document.pressed;
+	if (a=="REG")
+	document.myform.action ="signup.html";
+	else
+		document.myform.action ="signin.html";
+   return true;
+}
+</script>
+<H2>Welcome to Priyanka's Store</H2>
+<form name="myform" method="post" onsubmit="return OnSubmitForm();">
+<p>Join free for party Favours <input type="submit" value="Join for Free" onclick="document.pressed='REG';"></p>
+<p>If you are an existing user please Sign In <input type="submit" value="Sign In"  onclick="document.pressed='LOG';"></p>
+</form>
+</body>
+</html>
